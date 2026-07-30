@@ -2,11 +2,81 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>일본어 단어장</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>고쿠사이 일본어 단어장</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>일본어 단어장</h1>
-    <p>사이트 연결 테스트 성공!</p>
+    <main class="container">
+
+        <!-- 주차 목록 화면 -->
+        <section id="week-screen">
+            <header class="main-header">
+                <h1>일본어 단어장</h1>
+                <p>학습할 주차를 선택하세요.</p>
+            </header>
+
+            <div id="week-list" class="week-list">
+                데이터를 불러오는 중입니다.
+            </div>
+        </section>
+
+        <!-- 단어 학습 화면 -->
+        <section id="study-screen" class="hidden">
+
+            <div class="study-header">
+                <button id="back-button" class="back-button">
+                    ← 주차 목록
+                </button>
+
+                <h2 id="week-title"></h2>
+
+                <p class="progress">
+                    <span id="current-number">1</span>
+                    /
+                    <span id="total-number">0</span>
+                </p>
+            </div>
+
+            <div id="word-card" class="word-card">
+                <p class="card-guide">
+                    카드를 누르면 정답이 표시됩니다.
+                </p>
+
+                <div id="question-area">
+                    <p id="kanji" class="kanji"></p>
+                </div>
+
+                <div id="answer-area" class="answer-area hidden-answer">
+                    <p id="hiragana" class="hiragana"></p>
+                    <p id="meaning" class="meaning"></p>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <button id="previous-button">
+                    이전
+                </button>
+
+                <button id="next-button" class="primary-button">
+                    다음
+                </button>
+            </div>
+
+            <button id="shuffle-button" class="wide-button">
+                단어 순서 섞기
+            </button>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
