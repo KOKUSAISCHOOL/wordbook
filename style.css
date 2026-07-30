@@ -202,3 +202,56 @@ button {
         font-size: 22px;
     }
 }
+.study-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.favorite-list-button {
+    padding: 10px 14px;
+    border: 1px solid #e2b93b;
+    border-radius: 10px;
+    background: #fff8dc;
+    color: #765800;
+    font-size: 15px;
+}
+
+.word-card {
+    position: relative;
+}
+
+.favorite-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    width: 46px;
+    height: 46px;
+
+    padding: 0;
+    border: 1px solid #d9dee6;
+    border-radius: 50%;
+
+    background: white;
+    color: #999;
+
+    font-size: 29px;
+    line-height: 1;
+}
+
+.favorite-button.active {
+    border-color: #e2b93b;
+    background: #fff8dc;
+    color: #e0a800;
+}
+
+.favorite-empty {
+    padding: 35px 20px;
+    border: 1px solid #dce1e8;
+    border-radius: 16px;
+    background: white;
+    color: #666;
+    text-align: center;
+}
