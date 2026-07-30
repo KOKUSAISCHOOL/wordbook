@@ -9,7 +9,26 @@ let allWords = [];
 let currentWords = [];
 let currentIndex = 0;
 let answerVisible = false;
+
+/*
+    currentMode 값
+
+    week:
+    일반 주차 학습
+
+    all-favorites:
+    메인 화면에서 들어온 전체 즐겨찾기
+
+    week-favorites:
+    특정 주차에서 들어온 해당 주차 즐겨찾기
+*/
 let currentMode = "week";
+
+/*
+    현재 선택한 주차를 기억한다.
+    주차 안에서 즐겨찾기를 눌렀을 때 사용한다.
+*/
+let selectedWeek = "";
 
 const FAVORITES_KEY = "japanese-wordbook-favorites-v1";
 
@@ -74,7 +93,7 @@ const mainFavoriteButton =
 
 
 /* ==============================
-   데이터 불러오기
+   단어 데이터 불러오기
 ============================== */
 
 async function loadWords() {
@@ -143,7 +162,8 @@ function renderWeekList() {
     const groupedWeeks = {};
 
     allWords.forEach((item) => {
-        const weekName = String(item.week).trim();
+        const weekName =
+            String(item.week).trim();
 
         if (!groupedWeeks[weekName]) {
             groupedWeeks[weekName] = [];
@@ -152,19 +172,25 @@ function renderWeekList() {
         groupedWeeks[weekName].push(item);
     });
 
-    const weekNames = Object.keys(groupedWeeks).reverse();
+    const weekNames =
+        Object.keys(groupedWeeks).reverse();
 
     weekNames.forEach((weekName) => {
-        const button = document.createElement("button");
+        const button =
+            document.createElement("button");
 
         button.type = "button";
         button.className = "week-item";
 
-        const title = document.createElement("span");
+        const title =
+            document.createElement("span");
+
         title.className = "week-item-title";
         title.textContent = weekName;
 
-        const count = document.createElement("span");
+        const count =
+            document.createElement("span");
+
         count.className = "week-item-count";
         count.textContent =
             `단어 ${groupedWeeks[weekName].length}개`;
@@ -181,11 +207,17 @@ function renderWeekList() {
 }
 
 
+/* ==============================
+   일반 주차 학습
+============================== */
+
 function openWeek(weekName) {
     currentMode = "week";
+    selectedWeek = weekName;
 
     currentWords = allWords.filter(
-        (item) => String(item.week).trim() === weekName
+        (item) =>
+            String(item.week).trim() === weekName
     );
 
     currentIndex = 0;
@@ -198,7 +230,7 @@ function openWeek(weekName) {
 
 
 /* ==============================
-   즐겨찾기
+   즐겨찾기 저장·조회
 ============================== */
 
 function getWordId(item) {
@@ -222,11 +254,9 @@ function getFavorites() {
 
         const parsed = JSON.parse(saved);
 
-        if (!Array.isArray(parsed)) {
-            return [];
-        }
-
-        return parsed;
+        return Array.isArray(parsed)
+            ? parsed
+            : [];
 
     } catch (error) {
         console.error(
@@ -263,6 +293,10 @@ function isFavorite(item) {
 }
 
 
+/* ==============================
+   즐겨찾기 추가·해제
+============================== */
+
 function toggleFavorite() {
     if (currentWords.length === 0) {
         return;
@@ -284,11 +318,14 @@ function toggleFavorite() {
     saveFavorites(favorites);
 
     /*
-        즐겨찾기 목록에서 별을 해제하면
-        현재 즐겨찾기 목록을 새로 만든다.
+        즐겨찾기 전용 화면에서 별을 해제했다면
+        현재 즐겨찾기 목록을 다시 만든다.
     */
-    if (currentMode === "favorites") {
-        refreshFavoriteWords();
+    if (
+        currentMode === "all-favorites" ||
+        currentMode === "week-favorites"
+    ) {
+        refreshCurrentFavorites();
 
         if (currentWords.length === 0) {
             showEmptyFavorites();
@@ -296,7 +333,8 @@ function toggleFavorite() {
         }
 
         if (currentIndex >= currentWords.length) {
-            currentIndex = currentWords.length - 1;
+            currentIndex =
+                currentWords.length - 1;
         }
 
         showCurrentWord();
@@ -342,22 +380,17 @@ function updateFavoriteButton() {
 }
 
 
-function refreshFavoriteWords() {
-    const favorites = getFavorites();
+/* ==============================
+   전체 즐겨찾기
+============================== */
 
-    currentWords = allWords.filter((item) => {
-        return favorites.includes(getWordId(item));
-    });
-}
-
-
-function openFavorites() {
-    currentMode = "favorites";
+function openAllFavorites() {
+    currentMode = "all-favorites";
     currentIndex = 0;
 
-    refreshFavoriteWords();
+    refreshAllFavorites();
 
-    weekTitle.textContent = "즐겨찾기";
+    weekTitle.textContent = "전체 즐겨찾기";
 
     showStudyScreen();
 
@@ -371,6 +404,86 @@ function openFavorites() {
 }
 
 
+function refreshAllFavorites() {
+    const favorites = getFavorites();
+
+    currentWords = allWords.filter((item) => {
+        return favorites.includes(
+            getWordId(item)
+        );
+    });
+}
+
+
+/* ==============================
+   현재 주차 즐겨찾기
+============================== */
+
+function openWeekFavorites() {
+    /*
+        주차를 먼저 선택하지 않은 상태에서는
+        전체 즐겨찾기로 연결한다.
+    */
+    if (!selectedWeek) {
+        openAllFavorites();
+        return;
+    }
+
+    currentMode = "week-favorites";
+    currentIndex = 0;
+
+    refreshWeekFavorites();
+
+    weekTitle.textContent =
+        `${selectedWeek} 즐겨찾기`;
+
+    showStudyScreen();
+
+    if (currentWords.length === 0) {
+        showEmptyFavorites();
+        return;
+    }
+
+    enableStudyControls();
+    showCurrentWord();
+}
+
+
+function refreshWeekFavorites() {
+    const favorites = getFavorites();
+
+    currentWords = allWords.filter((item) => {
+        const itemWeek =
+            String(item.week || "").trim();
+
+        return (
+            itemWeek === selectedWeek &&
+            favorites.includes(getWordId(item))
+        );
+    });
+}
+
+
+/* ==============================
+   현재 즐겨찾기 목록 다시 만들기
+============================== */
+
+function refreshCurrentFavorites() {
+    if (currentMode === "all-favorites") {
+        refreshAllFavorites();
+        return;
+    }
+
+    if (currentMode === "week-favorites") {
+        refreshWeekFavorites();
+    }
+}
+
+
+/* ==============================
+   즐겨찾기 없음 화면
+============================== */
+
 function showEmptyFavorites() {
     currentWords = [];
     currentIndex = 0;
@@ -379,16 +492,27 @@ function showEmptyFavorites() {
     totalNumber.textContent = "0";
 
     kanji.textContent = "즐겨찾기 없음";
-    kanji.classList.add("empty-favorite-title");
+    kanji.classList.add(
+        "empty-favorite-title"
+    );
 
     hiragana.textContent = "";
 
-    meaning.textContent =
-        "단어 카드 오른쪽 위의 별을 눌러 추가하세요.";
+    if (currentMode === "week-favorites") {
+        meaning.textContent =
+            `${selectedWeek}에 즐겨찾기한 단어가 없습니다.`;
+    } else {
+        meaning.textContent =
+            "단어 카드 오른쪽 위의 별을 눌러 추가하세요.";
+    }
 
-    meaning.classList.add("empty-favorite-message");
+    meaning.classList.add(
+        "empty-favorite-message"
+    );
 
-    answerArea.classList.remove("hidden-answer");
+    answerArea.classList.remove(
+        "hidden-answer"
+    );
 
     favoriteButton.classList.add("hidden");
 
@@ -409,8 +533,13 @@ function showCurrentWord() {
 
     enableStudyControls();
 
-    kanji.classList.remove("empty-favorite-title");
-    meaning.classList.remove("empty-favorite-message");
+    kanji.classList.remove(
+        "empty-favorite-title"
+    );
+
+    meaning.classList.remove(
+        "empty-favorite-message"
+    );
 
     const item = currentWords[currentIndex];
 
@@ -474,7 +603,7 @@ function toggleAnswer() {
 
 
 /* ==============================
-   이전 / 다음
+   이전·다음
 ============================== */
 
 function moveNext() {
@@ -500,7 +629,8 @@ function movePrevious() {
     currentIndex -= 1;
 
     if (currentIndex < 0) {
-        currentIndex = currentWords.length - 1;
+        currentIndex =
+            currentWords.length - 1;
     }
 
     showCurrentWord();
@@ -508,7 +638,7 @@ function movePrevious() {
 
 
 /* ==============================
-   단어 섞기
+   단어 순서 섞기
 ============================== */
 
 function shuffleWords() {
@@ -557,6 +687,12 @@ function returnToWeekList() {
     currentWords = [];
     currentIndex = 0;
     answerVisible = false;
+
+    /*
+        selectedWeek은 초기화하지 않는다.
+        즐겨찾기 화면에서 주차 목록으로 돌아간 뒤
+        다시 주차를 선택하면 새 값으로 바뀐다.
+    */
 }
 
 
@@ -580,34 +716,37 @@ function enableStudyControls() {
    버튼 이벤트
 ============================== */
 
-/*
-    정답은 카드 본문을 눌렀을 때만 표시된다.
-    즐겨찾기 버튼 클릭과 절대로 겹치지 않는다.
-*/
+/* 카드 본문 클릭: 정답 표시 */
 cardContent.addEventListener(
     "click",
     toggleAnswer
 );
 
 
-/*
-    별 버튼은 별 버튼 기능만 수행한다.
-*/
+/* 별 버튼: 즐겨찾기 추가·해제 */
 favoriteButton.addEventListener(
     "click",
     toggleFavorite
 );
 
 
+/*
+    특정 주차 안의 즐겨찾기 버튼:
+    현재 선택한 주차의 즐겨찾기만 조회
+*/
 favoriteListButton.addEventListener(
     "click",
-    openFavorites
+    openWeekFavorites
 );
 
 
+/*
+    메인 화면의 즐겨찾기 버튼:
+    모든 주차의 즐겨찾기 조회
+*/
 mainFavoriteButton.addEventListener(
     "click",
-    openFavorites
+    openAllFavorites
 );
 
 
@@ -636,7 +775,7 @@ backButton.addEventListener(
 
 
 /* ==============================
-   시작
+   프로그램 시작
 ============================== */
 
 loadWords();
