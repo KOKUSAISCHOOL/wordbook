@@ -406,3 +406,35 @@ button:disabled {
         padding-left: 13px;
     }
 }
+/* ==============================
+   네이버사전
+============================== */
+.study-top-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.naver-dictionary-button {
+    min-height: 38px;
+    padding: 9px 12px;
+
+    border: 1px solid #03c75a;
+    border-radius: 11px;
+
+    background: #ffffff;
+    color: #03a94f;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.naver-dictionary-button:active {
+    background: #f0fff6;
+}
+
+.naver-dictionary-button:disabled {
+    border-color: #d5d9df;
+    color: #999999;
+    background: #f1f3f5;
+}
