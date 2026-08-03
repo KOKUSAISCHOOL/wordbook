@@ -91,6 +91,8 @@ const favoriteListButton =
 const mainFavoriteButton =
     document.getElementById("main-favorite-button");
 
+const naverDictionaryButton =
+    document.getElementById("naver-dictionary-button");
 
 /* ==============================
    단어 데이터 불러오기
@@ -668,6 +670,33 @@ function shuffleWords() {
     showCurrentWord();
 }
 
+/* ==============================
+   네이버사전
+============================== */
+function openNaverDictionary() {
+    if (currentWords.length === 0) {
+        return;
+    }
+
+    const item = currentWords[currentIndex];
+
+    const searchWord =
+        String(item.kanji || "").trim();
+
+    if (!searchWord) {
+        return;
+    }
+
+    const searchUrl =
+        "https://ja.dict.naver.com/#/search?query=" +
+        encodeURIComponent(searchWord);
+
+    window.open(
+        searchUrl,
+        "_blank",
+        "noopener,noreferrer"
+    );
+}
 
 /* ==============================
    화면 전환
@@ -701,6 +730,7 @@ function disableStudyControls() {
     nextButton.disabled = true;
     shuffleButton.disabled = true;
     cardContent.disabled = true;
+    naverDictionaryButton.disabled = true;
 }
 
 
@@ -709,6 +739,7 @@ function enableStudyControls() {
     nextButton.disabled = false;
     shuffleButton.disabled = false;
     cardContent.disabled = false;
+    naverDictionaryButton.disabled = false;
 }
 
 
@@ -773,7 +804,10 @@ backButton.addEventListener(
     returnToWeekList
 );
 
-
+naverDictionaryButton.addEventListener(
+    "click",
+    openNaverDictionary
+);
 /* ==============================
    프로그램 시작
 ============================== */
