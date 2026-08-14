@@ -779,7 +779,7 @@ function updateAutoLearningButtons() {
         autoPlusButton.disabled = false;
 
         autoLearningButton.textContent =
-            `자동학습 ON · ${autoLearningSeconds}초`;
+            `자동학습 ON<br>${autoLearningSeconds}초`;
 
         autoLearningButton.classList.add(
             "active"
@@ -791,7 +791,7 @@ function updateAutoLearningButtons() {
         autoPlusButton.disabled = true;
 
         autoLearningButton.textContent =
-            `자동학습 ${autoLearningSeconds}초`;
+            `자동학습<br>${autoLearningSeconds}초`;
 
         autoLearningButton.classList.remove(
             "active"
