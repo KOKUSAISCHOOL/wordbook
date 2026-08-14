@@ -107,6 +107,13 @@ const mainFavoriteButton =
 const naverDictionaryButton =
     document.getElementById("naver-dictionary-button");
 
+const autoMinusButton =
+    document.getElementById("auto-minus-button");
+
+const autoLearningButton =
+    document.getElementById("auto-learning-button");
+
+const autoPlusButton =document.getElementById("auto-plus-button");
 /* ==============================
    단어 데이터 불러오기
 ============================== */
@@ -227,6 +234,7 @@ function renderWeekList() {
 ============================== */
 
 function openWeek(weekName) {
+    stopAutoLearning();
     currentMode = "week";
     selectedWeek = weekName;
 
@@ -400,6 +408,7 @@ function updateFavoriteButton() {
 ============================== */
 
 function openAllFavorites() {
+    stopAutoLearning();
     currentMode = "all-favorites";
     currentIndex = 0;
 
@@ -435,6 +444,7 @@ function refreshAllFavorites() {
 ============================== */
 
 function openWeekFavorites() {
+    stopAutoLearning();
     /*
         주차를 먼저 선택하지 않은 상태에서는
         전체 즐겨찾기로 연결한다.
@@ -722,6 +732,8 @@ function showStudyScreen() {
 
 
 function returnToWeekList() {
+
+    stopAutoLearning();
     studyScreen.classList.add("hidden");
     weekScreen.classList.remove("hidden");
 
@@ -753,6 +765,238 @@ function enableStudyControls() {
     shuffleButton.disabled = false;
     cardContent.disabled = false;
     naverDictionaryButton.disabled = false;
+}
+
+/* ==============================
+   자동학습
+============================== */
+
+function updateAutoLearningButtons() {
+
+    if (autoLearning) {
+
+        autoMinusButton.disabled = false;
+        autoPlusButton.disabled = false;
+
+        autoLearningButton.textContent =
+            `자동학습 ON · ${autoLearningSeconds}초`;
+
+        autoLearningButton.classList.add(
+            "active"
+        );
+
+    } else {
+
+        autoMinusButton.disabled = true;
+        autoPlusButton.disabled = true;
+
+        autoLearningButton.textContent =
+            `자동학습 ${autoLearningSeconds}초`;
+
+        autoLearningButton.classList.remove(
+            "active"
+        );
+    }
+}
+
+
+function startAutoLearning() {
+
+    if (currentWords.length === 0) {
+        return;
+    }
+
+    autoLearning = true;
+    autoLearningPhase = "question";
+
+    /*
+        자동학습 시작 시 현재 단어는
+        문제 상태로 다시 보여준다.
+    */
+    hideAnswer();
+
+    updateAutoLearningButtons();
+
+    scheduleAutoLearning();
+}
+
+
+function stopAutoLearning() {
+
+    autoLearning = false;
+    autoLearningPhase = "question";
+
+    if (autoLearningTimer) {
+
+        clearTimeout(autoLearningTimer);
+
+        autoLearningTimer = null;
+    }
+
+    updateAutoLearningButtons();
+}
+
+
+function toggleAutoLearning() {
+
+    if (autoLearning) {
+
+        stopAutoLearning();
+
+    } else {
+
+        startAutoLearning();
+    }
+}
+
+
+function scheduleAutoLearning() {
+
+    if (!autoLearning) {
+        return;
+    }
+
+    /*
+        기존 타이머가 있으면 제거
+    */
+    if (autoLearningTimer) {
+
+        clearTimeout(autoLearningTimer);
+    }
+
+    autoLearningTimer = setTimeout(
+        runAutoLearningStep,
+        autoLearningSeconds * 1000
+    );
+}
+
+
+function runAutoLearningStep() {
+
+    if (!autoLearning) {
+        return;
+    }
+
+    if (currentWords.length === 0) {
+
+        stopAutoLearning();
+
+        return;
+    }
+
+
+    /*
+        문제 단계
+        ↓
+        정답 표시
+    */
+    if (autoLearningPhase === "question") {
+
+        showAnswer();
+
+        autoLearningPhase = "answer";
+
+        scheduleAutoLearning();
+
+        return;
+    }
+
+
+    /*
+        정답 단계
+        ↓
+        다음 단어
+    */
+    if (autoLearningPhase === "answer") {
+
+        currentIndex += 1;
+
+        /*
+            마지막 단어까지 갔으면
+            다시 첫 번째 단어부터
+        */
+        if (
+            currentIndex >= currentWords.length
+        ) {
+
+            currentIndex = 0;
+        }
+
+        showCurrentWord();
+
+        /*
+            showCurrentWord에서
+            자동으로 정답이 가려짐
+        */
+
+        autoLearningPhase = "question";
+
+        scheduleAutoLearning();
+    }
+}
+
+
+/* ==============================
+   자동학습 시간 감소
+============================== */
+
+function decreaseAutoLearningTime() {
+
+    if (!autoLearning) {
+        return;
+    }
+
+    if (
+        autoLearningSeconds <=
+        MIN_AUTO_SECONDS
+    ) {
+
+        alert("최소값 1 입니다.");
+
+        return;
+    }
+
+    autoLearningSeconds -= 1;
+
+    updateAutoLearningButtons();
+
+    /*
+        변경된 시간을 현재 단계부터
+        바로 적용
+    */
+    scheduleAutoLearning();
+}
+
+
+/* ==============================
+   자동학습 시간 증가
+============================== */
+
+function increaseAutoLearningTime() {
+
+    if (!autoLearning) {
+        return;
+    }
+
+    if (
+        autoLearningSeconds >=
+        MAX_AUTO_SECONDS
+    ) {
+
+        alert("최대값 10 입니다.");
+
+        return;
+    }
+
+    autoLearningSeconds += 1;
+
+    updateAutoLearningButtons();
+
+    /*
+        변경된 시간을 현재 단계부터
+        바로 적용
+    */
+    scheduleAutoLearning();
 }
 
 
@@ -821,8 +1065,25 @@ naverDictionaryButton.addEventListener(
     "click",
     openNaverDictionary
 );
+autoLearningButton.addEventListener(
+    "click",
+    toggleAutoLearning
+);
+
+
+autoMinusButton.addEventListener(
+    "click",
+    decreaseAutoLearningTime
+);
+
+
+autoPlusButton.addEventListener(
+    "click",
+    increaseAutoLearningTime
+);
 /* ==============================
    프로그램 시작
 ============================== */
 
+updateAutoLearningButtons();
 loadWords();
