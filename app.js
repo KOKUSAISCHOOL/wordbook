@@ -778,7 +778,7 @@ function updateAutoLearningButtons() {
         autoMinusButton.disabled = false;
         autoPlusButton.disabled = false;
 
-        autoLearningButton.textContent =
+        autoLearningButton.innerHTML =
             `자동학습 ON<br>${autoLearningSeconds}초`;
 
         autoLearningButton.classList.add(
@@ -790,7 +790,7 @@ function updateAutoLearningButtons() {
         autoMinusButton.disabled = true;
         autoPlusButton.disabled = true;
 
-        autoLearningButton.textContent =
+        autoLearningButton.innerHTML =
             `자동학습<br>${autoLearningSeconds}초`;
 
         autoLearningButton.classList.remove(
