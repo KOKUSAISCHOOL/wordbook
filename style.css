@@ -550,3 +550,96 @@ button:disabled {
     }
 }
 
+/* ==============================
+   자동학습 버튼 최종 정렬
+   - 단어 순서 섞기 버튼을 '다음' 버튼과 동일한 높이/폰트로 통일
+   - 자동학습 행의 모든 버튼 글씨 스타일 통일
+============================== */
+
+.auto-control-row > button {
+    height: 56px !important;
+
+    font-family:
+        Arial,
+        "Noto Sans KR",
+        "Noto Sans JP",
+        "Malgun Gothic",
+        sans-serif !important;
+
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+}
+
+/* - / + 는 같은 폰트 스타일을 유지하면서 버튼 폭만 작게 */
+.auto-control-row > .auto-time-button {
+    flex: 0 0 40px !important;
+    width: 40px !important;
+    min-width: 40px !important;
+    padding: 0 !important;
+}
+
+/* 자동학습 버튼 */
+.auto-control-row > .auto-learning-button {
+    flex: 0 0 135px !important;
+    width: 135px !important;
+    min-width: 135px !important;
+    padding: 0 8px !important;
+    white-space: nowrap;
+}
+
+/* 단어 순서 섞기: 다음 버튼과 같은 높이/글씨 */
+.auto-control-row > #shuffle-button {
+    flex: 1 1 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    height: 56px !important;
+    margin: 0 !important;
+    padding: 14px !important;
+
+    border: 1px solid #ccd2dc !important;
+    border-radius: 13px !important;
+
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+}
+
+/* 자동학습 ON 상태도 글씨 크기는 동일 */
+.auto-control-row > .auto-learning-button.active {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+}
+
+/* 작은 화면에서도 한 줄 유지 */
+@media (max-width: 420px) {
+    .auto-control-row {
+        gap: 4px;
+    }
+
+    .auto-control-row > button {
+        font-size: 14px !important;
+    }
+
+    .auto-control-row > .auto-time-button {
+        flex-basis: 36px !important;
+        width: 36px !important;
+        min-width: 36px !important;
+    }
+
+    .auto-control-row > .auto-learning-button {
+        flex-basis: 120px !important;
+        width: 120px !important;
+        min-width: 120px !important;
+        padding: 0 5px !important;
+    }
+
+    .auto-control-row > #shuffle-button {
+        padding: 0 5px !important;
+        font-size: 14px !important;
+    }
+}
+
