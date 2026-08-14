@@ -441,9 +441,29 @@ button:disabled {
 /* ==============================
    자동학습
 ============================== */
+
+/*
+   HTML을 추가 수정하지 않아도
+   [-] [자동학습] [+] [단어 순서 섞기]
+   4개 버튼이 한 줄에 배치되도록 설정
+*/
+
+.auto-time-button,
+.auto-learning-button,
+#shuffle-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    height: 52px;
+    margin-top: 12px;
+}
+
+/* - / + 버튼 */
 .auto-time-button {
+    width: 40px;
     min-width: 40px;
-    height: 42px;
+    padding: 0;
 
     border: 1px solid #d9dde4;
     border-radius: 10px;
@@ -456,11 +476,11 @@ button:disabled {
     cursor: pointer;
 }
 
+/* 자동학습 버튼 */
 .auto-learning-button {
+    width: 120px;
     min-width: 120px;
-    height: 42px;
-
-    padding: 0 14px;
+    padding: 0 10px;
 
     border: 1px solid #d9dde4;
     border-radius: 10px;
@@ -470,7 +490,34 @@ button:disabled {
     font-size: 14px;
     font-weight: 700;
 
+    white-space: nowrap;
     cursor: pointer;
+}
+
+/* 단어 순서 섞기 버튼
+   기존 .wide-button의 width:100% 값을 덮어씀 */
+#shuffle-button {
+    width: calc(100% - 224px);
+    min-width: 0;
+    padding: 0 10px;
+
+    border: 1px solid #ccd2dc;
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: #111111;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+/* 버튼 사이 간격 */
+#auto-learning-button,
+#auto-plus-button,
+#shuffle-button {
+    margin-left: 4px;
 }
 
 .auto-learning-button.active {
@@ -482,5 +529,26 @@ button:disabled {
 .auto-time-button:disabled {
     opacity: 0.35;
     cursor: default;
+}
+
+/* 작은 모바일 화면에서도 한 줄 유지 */
+@media (max-width: 420px) {
+    .auto-time-button {
+        width: 36px;
+        min-width: 36px;
+    }
+
+    .auto-learning-button {
+        width: 112px;
+        min-width: 112px;
+        padding: 0 6px;
+        font-size: 13px;
+    }
+
+    #shuffle-button {
+        width: calc(100% - 208px);
+        padding: 0 6px;
+        font-size: 13px;
+    }
 }
 
