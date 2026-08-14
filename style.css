@@ -442,96 +442,111 @@ button:disabled {
    자동학습
 ============================== */
 
-/* - / 자동학습 / + / 단어 순서 섞기 : 한 줄 배치 */
+/* 4개 버튼을 반드시 한 줄에 배치 */
 .auto-control-row {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: stretch;
     gap: 6px;
-    width: 100%;
+    width: 100% !important;
     margin-top: 12px;
 }
 
-.auto-time-button {
-    flex: 0 0 40px;
-    width: 40px;
-    min-width: 40px;
+/* - / + */
+.auto-control-row > .auto-time-button {
+    flex: 0 0 40px !important;
+    width: 40px !important;
+    min-width: 40px !important;
     height: 54px;
+
     padding: 0;
+
     border: 1px solid #d9dde4;
     border-radius: 10px;
+
     background: #ffffff;
+    color: #222222;
+
     font-size: 20px;
     font-weight: 700;
-    cursor: pointer;
 }
 
-.auto-learning-button {
-    flex: 0 0 120px;
-    width: 120px;
-    min-width: 120px;
+/* 자동학습 */
+.auto-control-row > .auto-learning-button {
+    flex: 0 0 120px !important;
+    width: 120px !important;
+    min-width: 120px !important;
     height: 54px;
+
     padding: 0 10px;
+
     border: 1px solid #d9dde4;
     border-radius: 10px;
+
     background: #ffffff;
+    color: #222222;
+
     font-size: 14px;
     font-weight: 700;
     white-space: nowrap;
-    cursor: pointer;
 }
 
-.shuffle-button,
-#shuffle-button {
-    flex: 1 1 auto;
-    width: auto;
-    min-width: 0;
-    height: 54px;
-    margin-top: 0;
-    padding: 0 10px;
-    border: 1px solid #ccd2dc;
-    border-radius: 10px;
-    background: #ffffff;
-    color: #111111;
-    font-size: 14px;
+/* 단어 순서 섞기 - 남은 공간 전체 사용 */
+.auto-control-row > #shuffle-button {
+    flex: 1 1 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    height: 54px !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
+
+    border: 1px solid #ccd2dc !important;
+    border-radius: 10px !important;
+
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    font-family: inherit;
+    font-size: 14px !important;
     font-weight: 500;
     white-space: nowrap;
-    cursor: pointer;
 }
 
-.auto-learning-button.active {
+/* 자동학습 ON */
+.auto-control-row > .auto-learning-button.active {
     background: #222222;
     color: #ffffff;
     border-color: #222222;
 }
 
-.auto-time-button:disabled {
+/* - / + 비활성 */
+.auto-control-row > .auto-time-button:disabled {
     opacity: 0.35;
     cursor: default;
 }
 
+/* 작은 화면에서도 한 줄 유지 */
 @media (max-width: 420px) {
     .auto-control-row {
         gap: 4px;
     }
 
-    .auto-time-button {
-        flex-basis: 36px;
-        width: 36px;
-        min-width: 36px;
+    .auto-control-row > .auto-time-button {
+        flex-basis: 36px !important;
+        width: 36px !important;
+        min-width: 36px !important;
     }
 
-    .auto-learning-button {
-        flex-basis: 108px;
-        width: 108px;
-        min-width: 108px;
+    .auto-control-row > .auto-learning-button {
+        flex-basis: 108px !important;
+        width: 108px !important;
+        min-width: 108px !important;
         padding: 0 5px;
         font-size: 13px;
     }
 
-    .shuffle-button,
-    #shuffle-button {
-        padding: 0 5px;
-        font-size: 13px;
+    .auto-control-row > #shuffle-button {
+        padding: 0 5px !important;
+        font-size: 13px !important;
     }
 }
 
