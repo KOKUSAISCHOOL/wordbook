@@ -442,204 +442,48 @@ button:disabled {
    자동학습
 ============================== */
 
-/* 4개 버튼을 반드시 한 줄에 배치 */
 .auto-control-row {
-    display: flex !important;
-    align-items: stretch;
+    display: flex;
     gap: 6px;
-    width: 100% !important;
+    width: 100%;
     margin-top: 12px;
 }
 
-/* - / + */
-.auto-control-row > .auto-time-button {
-    flex: 0 0 40px !important;
-    width: 40px !important;
-    min-width: 40px !important;
-    height: 54px;
-
-    padding: 0;
-
-    border: 1px solid #d9dde4;
-    border-radius: 10px;
-
-    background: #ffffff;
-    color: #222222;
-
-    font-size: 20px;
-    font-weight: 700;
+.auto-control-row button {
+    min-height: 56px;
+    padding: 14px;
+    border: 0;
+    border-radius: 13px;
+    background: #dfe4eb;
+    color: #111111;
+    font-size: 17px;
+    font-weight: 400;
 }
 
-/* 자동학습 */
-.auto-control-row > .auto-learning-button {
-    flex: 0 0 120px !important;
-    width: 120px !important;
-    min-width: 120px !important;
-    height: 54px;
-
-    padding: 0 10px;
-
-    border: 1px solid #d9dde4;
-    border-radius: 10px;
-
-    background: #ffffff;
-    color: #222222;
-
-    font-size: 14px;
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-/* 단어 순서 섞기 - 남은 공간 전체 사용 */
-.auto-control-row > #shuffle-button {
-    flex: 1 1 0 !important;
-    width: 0 !important;
-    min-width: 0 !important;
-    height: 54px !important;
-    margin: 0 !important;
-    padding: 0 10px !important;
-
-    border: 1px solid #ccd2dc !important;
-    border-radius: 10px !important;
-
-    background: #ffffff !important;
-    color: #111111 !important;
-
-    font-family: inherit;
-    font-size: 14px !important;
-    font-weight: 500;
-    white-space: nowrap;
-}
-
-/* 자동학습 ON */
-.auto-control-row > .auto-learning-button.active {
-    background: #222222;
-    color: #ffffff;
-    border-color: #222222;
-}
-
-/* - / + 비활성 */
-.auto-control-row > .auto-time-button:disabled {
-    opacity: 0.35;
-    cursor: default;
-}
-
-/* 작은 화면에서도 한 줄 유지 */
-@media (max-width: 420px) {
-    .auto-control-row {
-        gap: 4px;
-    }
-
-    .auto-control-row > .auto-time-button {
-        flex-basis: 36px !important;
-        width: 36px !important;
-        min-width: 36px !important;
-    }
-
-    .auto-control-row > .auto-learning-button {
-        flex-basis: 108px !important;
-        width: 108px !important;
-        min-width: 108px !important;
-        padding: 0 5px;
-        font-size: 13px;
-    }
-
-    .auto-control-row > #shuffle-button {
-        padding: 0 5px !important;
-        font-size: 13px !important;
-    }
-}
-
-/* ==============================
-   자동학습 버튼 최종 정렬
-   - 단어 순서 섞기 버튼을 '다음' 버튼과 동일한 높이/폰트로 통일
-   - 자동학습 행의 모든 버튼 글씨 스타일 통일
-============================== */
-
-.auto-control-row > button {
-    height: 56px !important;
-
-    font-family:
-        Arial,
-        "Noto Sans KR",
-        "Noto Sans JP",
-        "Malgun Gothic",
-        sans-serif !important;
-
-    font-size: 17px !important;
-    font-weight: 400 !important;
-    line-height: 1.2 !important;
-}
-
-/* - / + 는 같은 폰트 스타일을 유지하면서 버튼 폭만 작게 */
-.auto-control-row > .auto-time-button {
-    flex: 0 0 40px !important;
-    width: 40px !important;
-    min-width: 40px !important;
+.auto-time-button {
+    flex: 0 0 40px;
+    width: 40px;
     padding: 0 !important;
 }
 
-/* 자동학습 버튼 */
-.auto-control-row > .auto-learning-button {
-    flex: 0 0 135px !important;
-    width: 135px !important;
-    min-width: 135px !important;
-    padding: 0 8px !important;
+.auto-learning-button {
+    flex: 1;
+    min-width: 0;
     white-space: nowrap;
 }
 
-/* 단어 순서 섞기: 다음 버튼과 같은 높이/글씨 */
-.auto-control-row > #shuffle-button {
-    flex: 1 1 0 !important;
-    width: 0 !important;
-    min-width: 0 !important;
-    height: 56px !important;
-    margin: 0 !important;
-    padding: 14px !important;
-
-    border: 1px solid #ccd2dc !important;
-    border-radius: 13px !important;
-
-    background: #ffffff !important;
-    color: #111111 !important;
-
-    font-size: 17px !important;
-    font-weight: 400 !important;
-    line-height: 1.2 !important;
+#shuffle-button {
+    flex: 0 0 calc((100% - 12px) / 2);
+    width: calc((100% - 12px) / 2);
+    margin: 0;
 }
 
-/* 자동학습 ON 상태도 글씨 크기는 동일 */
-.auto-control-row > .auto-learning-button.active {
-    font-size: 17px !important;
-    font-weight: 400 !important;
+.auto-learning-button.active {
+    background: #222222;
+    color: #ffffff;
 }
 
-/* 작은 화면에서도 한 줄 유지 */
-@media (max-width: 420px) {
-    .auto-control-row {
-        gap: 4px;
-    }
-
-    .auto-control-row > button {
-        font-size: 14px !important;
-    }
-
-    .auto-control-row > .auto-time-button {
-        flex-basis: 36px !important;
-        width: 36px !important;
-        min-width: 36px !important;
-    }
-
-    .auto-control-row > .auto-learning-button {
-        flex-basis: 120px !important;
-        width: 120px !important;
-        min-width: 120px !important;
-        padding: 0 5px !important;
-    }
-
-    .auto-control-row > #shuffle-button {
-        padding: 0 5px !important;
-        font-size: 14px !important;
-    }
+.auto-time-button:disabled {
+    opacity: 0.35;
 }
 
