@@ -302,17 +302,20 @@ button:disabled {
 
 
 /* ==============================
-   이전 / 다음 / 섞기
+   이전 / 다음
 ============================== */
 
 .button-row {
     display: flex;
     gap: 12px;
+    width: 100%;
     margin-top: 18px;
 }
 
 .button-row button {
-    width: 50%;
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
     min-height: 56px;
     padding: 14px;
 
@@ -323,26 +326,12 @@ button:disabled {
     color: #111111;
 
     font-size: 17px;
+    font-weight: 400;
 }
 
 .button-row .primary-button {
     background: #2864eb;
     color: #ffffff;
-}
-
-.wide-button {
-    width: 100%;
-    min-height: 54px;
-    margin-top: 12px;
-    padding: 14px;
-
-    border: 1px solid #ccd2dc;
-    border-radius: 12px;
-
-    background: #ffffff;
-    color: #111111;
-
-    font-size: 16px;
 }
 
 
@@ -359,6 +348,101 @@ button:disabled {
     margin-top: 15px;
     color: #777777;
     font-size: 16px;
+}
+
+
+/* ==============================
+   네이버사전
+============================== */
+.study-top-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.naver-dictionary-button {
+    min-height: 38px;
+    padding: 9px 12px;
+
+    border: 1px solid #03c75a;
+    border-radius: 11px;
+
+    background: #ffffff;
+    color: #03a94f;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.naver-dictionary-button:active {
+    background: #f0fff6;
+}
+
+.naver-dictionary-button:disabled {
+    border-color: #d5d9df;
+    color: #999999;
+    background: #f1f3f5;
+}
+/* ==============================
+   자동학습
+============================== */
+
+/*
+   윗줄의 '다음' 버튼과
+   아래 '단어 순서 섞기' 버튼이
+   화면 크기에 따라 항상 같은 너비가 되도록 구성
+*/
+.auto-control-row {
+    display: grid;
+    grid-template-columns:
+        40px
+        minmax(0, 1fr)
+        40px
+        calc((100% - 12px) / 2);
+
+    gap: 6px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.auto-control-row button {
+    min-width: 0;
+    min-height: 56px;
+    padding: 14px;
+
+    border: 0;
+    border-radius: 13px;
+
+    background: #dfe4eb;
+    color: #111111;
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.auto-time-button {
+    padding: 0 !important;
+    font-size: 20px !important;
+}
+
+.auto-learning-button {
+    white-space: nowrap;
+}
+
+#shuffle-button {
+    width: 100%;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.auto-learning-button.active {
+    background: #222222;
+    color: #ffffff;
+}
+
+.auto-time-button:disabled {
+    opacity: 0.35;
+    cursor: default;
 }
 
 
@@ -405,85 +489,25 @@ button:disabled {
         padding-right: 13px;
         padding-left: 13px;
     }
-}
-/* ==============================
-   네이버사전
-============================== */
-.study-top-left {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
-.naver-dictionary-button {
-    min-height: 38px;
-    padding: 9px 12px;
+    .auto-control-row {
+        grid-template-columns:
+            36px
+            minmax(0, 1fr)
+            36px
+            calc((100% - 12px) / 2);
 
-    border: 1px solid #03c75a;
-    border-radius: 11px;
+        gap: 4px;
+    }
 
-    background: #ffffff;
-    color: #03a94f;
+    .auto-control-row button {
+        padding: 10px 6px;
+        font-size: 14px;
+    }
 
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.naver-dictionary-button:active {
-    background: #f0fff6;
-}
-
-.naver-dictionary-button:disabled {
-    border-color: #d5d9df;
-    color: #999999;
-    background: #f1f3f5;
-}
-/* ==============================
-   자동학습
-============================== */
-
-.auto-control-row {
-    display: flex;
-    gap: 6px;
-    width: 100%;
-    margin-top: 12px;
-}
-
-.auto-control-row button {
-    min-height: 56px;
-    padding: 14px;
-    border: 0;
-    border-radius: 13px;
-    background: #dfe4eb;
-    color: #111111;
-    font-size: 17px;
-    font-weight: 400;
-}
-
-.auto-time-button {
-    flex: 0 0 40px;
-    width: 40px;
-    padding: 0 !important;
-}
-
-.auto-learning-button {
-    flex: 1;
-    min-width: 0;
-    white-space: nowrap;
-}
-
-#shuffle-button {
-    flex: 0 0 calc((100% - 12px) / 2);
-    width: calc((100% - 12px) / 2);
-    margin: 0;
-}
-
-.auto-learning-button.active {
-    background: #222222;
-    color: #ffffff;
-}
-
-.auto-time-button:disabled {
-    opacity: 0.35;
+    .auto-time-button {
+        padding: 0 !important;
+        font-size: 18px !important;
+    }
 }
 
