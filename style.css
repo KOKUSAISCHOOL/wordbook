@@ -438,3 +438,49 @@ button:disabled {
     color: #999999;
     background: #f1f3f5;
 }
+/* ==============================
+   자동학습
+============================== */
+.auto-time-button {
+    min-width: 40px;
+    height: 42px;
+
+    border: 1px solid #d9dde4;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.auto-learning-button {
+    min-width: 120px;
+    height: 42px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d9dde4;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.auto-learning-button.active {
+    background: #222222;
+    color: #ffffff;
+    border-color: #222222;
+}
+
+.auto-time-button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
