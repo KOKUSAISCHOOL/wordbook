@@ -10,6 +10,19 @@ let currentWords = [];
 let currentIndex = 0;
 let answerVisible = false;
 
+/* ==============================
+   상태값 자동학습
+============================== */
+
+let autoLearning = false;
+let autoLearningSeconds = 3;
+let autoLearningTimer = null;
+let autoLearningPhase = "question";
+
+const MIN_AUTO_SECONDS = 1;
+const MAX_AUTO_SECONDS = 10;
+
+
 /*
     currentMode 값
 
