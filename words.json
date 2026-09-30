@@ -1,1052 +1,152 @@
 [
     {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "慌てる",
-        "hiragana": "あわてる",
-        "meaning": "허둥대다"
+        "week": "2026년 10월 2일(금)",
+        "kanji": "出張",
+        "hiragana": "しゅっちょう",
+        "meaning": "출장"
     },
     {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "～おそれがある",
+        "week": "2026년 10월 2일(금)",
+        "kanji": "練習",
+        "hiragana": "れんしゅう",
+        "meaning": "연습"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "惜しい",
+        "hiragana": "おしい",
+        "meaning": "아깝다, 애석하다"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "長期間",
+        "hiragana": "ちょうきかん",
+        "meaning": "장기간"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "階",
+        "hiragana": "かい",
+        "meaning": "층"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "構う",
+        "hiragana": "かまう",
+        "meaning": "상관하다"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "表す",
+        "hiragana": "あらわす",
+        "meaning": "나타내다, 표현하다"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "婦人",
+        "hiragana": "ふじん",
+        "meaning": "부인, 여성"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "相手",
+        "hiragana": "あいて",
+        "meaning": "상대방"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "勇ましい",
+        "hiragana": "いさましい",
+        "meaning": "용감하다"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "急ぐ",
+        "hiragana": "いそぐ",
+        "meaning": "서두르다"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "解決",
+        "hiragana": "かいけつ",
+        "meaning": "해결"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "従う",
+        "hiragana": "したがう",
+        "meaning": "따르다"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "文明",
+        "hiragana": "ぶんめい",
+        "meaning": "문명"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "坂道",
+        "hiragana": "さかみち",
+        "meaning": "비탈길"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "立派だ",
+        "hiragana": "りっぱだ",
+        "meaning": "훌륭하다"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "健康",
+        "hiragana": "けんこう",
+        "meaning": "건강"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "体力",
+        "hiragana": "たいりょく",
+        "meaning": "체력"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "絶対",
+        "hiragana": "ぜったい",
+        "meaning": "절대로, 꼭"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "人間",
+        "hiragana": "にんげん",
+        "meaning": "인간"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "景色",
+        "hiragana": "けしき",
+        "meaning": "경치"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "驚く",
+        "hiragana": "おどろく",
+        "meaning": "놀라다"
+    },
+    {
+        "week": "2026년 10월 2일(금)",
+        "kanji": "ボーナス",
         "hiragana": "-",
-        "meaning": "~할 우려가 있다"
+        "meaning": "보너스"
     },
     {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "懐かしい",
-        "hiragana": "なつかしい",
-        "meaning": "그립다"
+        "week": "2026년 10월 2일(금)",
+        "kanji": "腰",
+        "hiragana": "こし",
+        "meaning": "허리"
     },
     {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "文字",
-        "hiragana": "もじ",
-        "meaning": "문자"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "主張",
-        "hiragana": "しゅちょう",
-        "meaning": "주장"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "息",
-        "hiragana": "いき",
-        "meaning": "숨, 호흡"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "トラブル",
-        "hiragana": "-",
-        "meaning": "문제, 트러블"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "取り消す",
-        "hiragana": "とりけす",
-        "meaning": "취소하다"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "許す",
-        "hiragana": "ゆるす",
-        "meaning": "허락하다, 용서하다"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "運ぶ",
-        "hiragana": "はこぶ",
-        "meaning": "운반하다"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "見つける",
-        "hiragana": "みつける",
-        "meaning": "발견하다, 찾다"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "退屈だ",
-        "hiragana": "たいくつだ",
-        "meaning": "따분하다"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "穴",
-        "hiragana": "あな",
-        "meaning": "구멍"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "観察",
-        "hiragana": "かんさつ",
-        "meaning": "관찰"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "呼吸",
-        "hiragana": "こきゅう",
-        "meaning": "호흡"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "～より",
-        "hiragana": "-",
-        "meaning": "~보다"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "意識",
-        "hiragana": "いしき",
-        "meaning": "의식"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "広告",
-        "hiragana": "こうこく",
-        "meaning": "광고"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "宣伝",
-        "hiragana": "せんでん",
-        "meaning": "선전"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "栄養",
-        "hiragana": "えいよう",
-        "meaning": "영양"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "縛る",
-        "hiragana": "しばる",
-        "meaning": "(끈으로) 묶다"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "呼びかける",
-        "hiragana": "よびかける",
-        "meaning": "호소하다, 당부하다"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "頭痛",
-        "hiragana": "ずつう",
-        "meaning": "두통"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "当たる",
-        "hiragana": "あたる",
-        "meaning": "맞다, 적중하다"
-    },
-    {
-        "week": "2026년 9월 1일(화)",
-        "kanji": "細かい",
-        "hiragana": "こまかい",
-        "meaning": "잘다, 작다, 세세하다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "冷える",
-        "hiragana": "ひえる",
-        "meaning": "차가워지다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "なんとなく",
-        "hiragana": "-",
-        "meaning": "왠지,  어쩐지"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "願う",
-        "hiragana": "ねがう",
-        "meaning": "바라다, 원하다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "ずっと",
-        "hiragana": "-",
-        "meaning": "계속, 훨씬"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "農業",
-        "hiragana": "のうぎょう",
-        "meaning": "농업"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "～そうだ",
-        "hiragana": "-",
-        "meaning": "~할 것 같다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "乗車",
-        "hiragana": "じょうしゃ",
-        "meaning": "승차"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "資源",
-        "hiragana": "しげん",
-        "meaning": "자원"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "発展",
-        "hiragana": "はってん",
-        "meaning": "발전"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "連休",
-        "hiragana": "れんきゅう",
-        "meaning": "연휴"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "疑う",
-        "hiragana": "うたがう",
-        "meaning": "의심하다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "～に応じて",
-        "hiragana": "-",
-        "meaning": "~에 따라"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "～ため",
-        "hiragana": "-",
-        "meaning": "~때문에"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "方法",
-        "hiragana": "ほうほう",
-        "meaning": "방법"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "～ほど～ない",
-        "hiragana": "-",
-        "meaning": "~만큼 ~않다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "中身",
-        "hiragana": "なかみ",
-        "meaning": "속, 알맹이, 내용물"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "商品",
-        "hiragana": "しょうひん",
-        "meaning": "상품"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "登場",
-        "hiragana": "とうじょう",
-        "meaning": "등장"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "埋める",
-        "hiragana": "うめる",
-        "meaning": "묻다, 메우다, 채우다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "受け取る",
-        "hiragana": "うけとる",
-        "meaning": "수취하다, 받다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "進歩",
-        "hiragana": "しんぽ",
-        "meaning": "진보"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "破れる",
-        "hiragana": "やぶれる",
-        "meaning": "깨지다, 찢어지다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "～てもいい",
-        "hiragana": "-",
-        "meaning": "~해도 된다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "～かもしれない",
-        "hiragana": "-",
-        "meaning": "~일지도 모른다"
-    },
-    {
-        "week": "2026년 9월 4일(금)",
-        "kanji": "方向",
-        "hiragana": "ほうこう",
-        "meaning": "방향"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "疑問",
-        "hiragana": "ぎもん",
-        "meaning": "의문"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "もったいない",
-        "hiragana": "-",
-        "meaning": "아깝다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "配達",
-        "hiragana": "はいたつ",
-        "meaning": "배달"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "動作",
-        "hiragana": "どうさ",
-        "meaning": "동작"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "舐める",
-        "hiragana": "なめる",
-        "meaning": "핥다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "吠える",
-        "hiragana": "ほえる",
-        "meaning": "(짐승 등이)짖다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "平均",
-        "hiragana": "へいきん",
-        "meaning": "평균"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "燃える",
-        "hiragana": "もえる",
-        "meaning": "타다, 불길이 일다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "得意だ",
-        "hiragana": "とくいだ",
-        "meaning": "잘하다, 자신이 있다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "昼食",
-        "hiragana": "ちゅうしょく",
-        "meaning": "점심식사"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "散散",
-        "hiragana": "ばらばら",
-        "meaning": "뿔뿔이, 제각각"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "血圧",
-        "hiragana": "けつあつ",
-        "meaning": "혈압"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "うっかり",
-        "hiragana": "-",
-        "meaning": "깜박, 무심코"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "郵送",
-        "hiragana": "ゆうそう",
-        "meaning": "우송, 우편"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "換える",
-        "hiragana": "かえる",
-        "meaning": "교환하다, 바꾸다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "現われる",
-        "hiragana": "あらわれる",
-        "meaning": "나타나다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "剥く",
-        "hiragana": "むく",
-        "meaning": "(껍질을) 벗기다, 까다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "助ける",
-        "hiragana": "たすける",
-        "meaning": "구조하다, 돕다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "成る可く",
-        "hiragana": "なるべく",
-        "meaning": "되도록, 가능한 한"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "丸い",
-        "hiragana": "まるい",
-        "meaning": "둥글다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "偶然",
-        "hiragana": "ぐうぜん",
-        "meaning": "우연, 우연히"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "小型",
-        "hiragana": "こがた",
-        "meaning": "소형"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "生える",
-        "hiragana": "はえる",
-        "meaning": "나다, 자라다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "追い越す",
-        "hiragana": "おいこす",
-        "meaning": "앞지르다"
-    },
-    {
-        "week": "2026년 9월 8일(화)",
-        "kanji": "疲れ",
-        "hiragana": "つかれ",
-        "meaning": "피로"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "互いに",
-        "hiragana": "たがいに",
-        "meaning": "서로"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "身に付ける",
-        "hiragana": "みにつける",
-        "meaning": "습득하다, 익히다"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "ぴったり",
-        "hiragana": "-",
-        "meaning": "딱, 꼭, 꽉, 착 정확히 맞는 모양"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "増減",
-        "hiragana": "ぞうげん",
-        "meaning": "증감"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "上品だ",
-        "hiragana": "じょうひんだ",
-        "meaning": "품위가 있다"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "怠い",
-        "hiragana": "だるい",
-        "meaning": "나른하다"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "訳す",
-        "hiragana": "やくす",
-        "meaning": "번역하다"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "測る",
-        "hiragana": "はかる",
-        "meaning": "재다, 측정하다"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "交流",
-        "hiragana": "こうりゅう",
-        "meaning": "교류"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "汚す",
-        "hiragana": "よごす",
-        "meaning": "더럽히다"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "動作",
-        "hiragana": "どうさ",
-        "meaning": "동작"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "郵便",
-        "hiragana": "ゆうびん",
-        "meaning": "우편"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "ずきずき",
-        "hiragana": "-",
-        "meaning": "욱신욱신"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "広場",
-        "hiragana": "ひろば",
-        "meaning": "광장"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "比べる",
-        "hiragana": "くらべる",
-        "meaning": "비교하다"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "秒",
-        "hiragana": "びょう",
-        "meaning": "초"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "各駅",
-        "hiragana": "かくえき",
-        "meaning": "각 역"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "この間",
-        "hiragana": "このあいだ",
-        "meaning": "일전"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "引き受ける",
-        "hiragana": "ひきうける",
-        "meaning": "떠맡다, 책임지고 맡다"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "高価",
-        "hiragana": "こうか",
-        "meaning": "고가"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "交流",
-        "hiragana": "こうりゅう",
-        "meaning": "교류"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "方角",
-        "hiragana": "ほうがく",
-        "meaning": "방향, 범위"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "過去",
-        "hiragana": "かこ",
-        "meaning": "과거"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "回す",
-        "hiragana": "まわす",
-        "meaning": "돌리다, 회전시키다"
-    },
-    {
-        "week": "2026년 9월 11일(금)",
-        "kanji": "苦労",
-        "hiragana": "くろう",
-        "meaning": "노고, 고생"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "借りる",
-        "hiragana": "かりる",
-        "meaning": "빌리다"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "朝焼け",
-        "hiragana": "あさや",
-        "meaning": "아침노을"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "印刷",
-        "hiragana": "いんさつ",
-        "meaning": "인쇄"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "遠慮",
-        "hiragana": "えんりょ",
-        "meaning": "사양, 겸손"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "返答",
-        "hiragana": "へんとう",
-        "meaning": "응답"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "覚悟",
-        "hiragana": "かくご",
-        "meaning": "각오"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "花壇",
-        "hiragana": "かだん",
-        "meaning": "화단, 꽃밭"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "～たことがある",
-        "hiragana": "-",
-        "meaning": "~한 적이 있다"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "お祝い",
-        "hiragana": "おいわい",
-        "meaning": "축하"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "貯金",
-        "hiragana": "ちょきん",
-        "meaning": "저금"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "内緒",
-        "hiragana": "ないしょ",
-        "meaning": "비밀"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "～でしょう",
-        "hiragana": "-",
-        "meaning": "~겠지요"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "栄養分",
-        "hiragana": "えいようぶん",
-        "meaning": "영양분"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "保証",
-        "hiragana": "ほしょう",
-        "meaning": "보증"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "握る",
-        "hiragana": "にぎる",
-        "meaning": "(손에 꽉) 쥐다"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "～たばかり",
-        "hiragana": "-",
-        "meaning": "막 ~했다"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "基礎",
-        "hiragana": "きそ",
-        "meaning": "기초"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "締め切り",
-        "hiragana": "しめきり",
-        "meaning": "마감"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "境",
-        "hiragana": "さかい",
-        "meaning": "경계, 갈림길"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "通訳",
-        "hiragana": "つうやく",
-        "meaning": "통역"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "預ける",
-        "hiragana": "あずける",
-        "meaning": "맡기다"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "血液",
-        "hiragana": "けつえき",
-        "meaning": "혈액"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "浅い",
-        "hiragana": "あさい",
-        "meaning": "얕다"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "砂",
-        "hiragana": "すな",
-        "meaning": "모래"
-    },
-    {
-        "week": "2026년 9월 15일(화)",
-        "kanji": "怒鳴る",
-        "hiragana": "どなる",
-        "meaning": "고함치다, 호통치다"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "泣く",
-        "hiragana": "なく",
-        "meaning": "울다"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "鉱山",
-        "hiragana": "こうざん",
-        "meaning": "광산"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "⼼⾝",
-        "hiragana": "しんしん",
-        "meaning": "심신"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "団体",
-        "hiragana": "だんたい",
-        "meaning": "단체"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "枝",
-        "hiragana": "えだ",
-        "meaning": "가지"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "残る",
-        "hiragana": "のこる",
-        "meaning": "남다"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "感覚",
-        "hiragana": "かんかく",
-        "meaning": "감각"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "割れる",
-        "hiragana": "われる",
-        "meaning": "나뉘다, 깨지다"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "株",
-        "hiragana": "かぶ",
-        "meaning": "주식"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "招待",
-        "hiragana": "しょうたい",
-        "meaning": "초대"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "影響",
-        "hiragana": "えいきょう",
-        "meaning": "영향"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "普段",
-        "hiragana": "ふだん",
-        "meaning": "평소"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "原因",
-        "hiragana": "げんいん",
-        "meaning": "원인"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "想像",
-        "hiragana": "そうぞう",
-        "meaning": "상상"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "成功",
-        "hiragana": "せいこう",
-        "meaning": "성공"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "現在",
-        "hiragana": "げんざい",
-        "meaning": "현재"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "チェック",
-        "hiragana": "-",
-        "meaning": "확인"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "早退",
-        "hiragana": "そうたい",
-        "meaning": "조퇴"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "誕生",
-        "hiragana": "たんじょう",
-        "meaning": "탄생"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "離す",
-        "hiragana": "はなす",
-        "meaning": "떼다, 놓치다"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "～みたいだ",
-        "hiragana": "-",
-        "meaning": "~같다"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "靴",
-        "hiragana": "くつ",
-        "meaning": "구두"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "得意だ",
-        "hiragana": "とくいだ",
-        "meaning": "잘한다, 숙련되다"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "～てくれる",
-        "hiragana": "-",
-        "meaning": "~해주다"
-    },
-    {
-        "week": "2026년 9월 18일(금)",
-        "kanji": "否定",
-        "hiragana": "ひてい",
-        "meaning": "부정"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "解ける",
-        "hiragana": "とける",
-        "meaning": "(문제가) 풀리다, 해결되다"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "高める",
-        "hiragana": "たかめる",
-        "meaning": "높이다"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "清潔だ",
-        "hiragana": "せいけつだ",
-        "meaning": "청결하다"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "反抗",
-        "hiragana": "はんこう",
-        "meaning": "반항"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "条件",
-        "hiragana": "じょうけん",
-        "meaning": "조건"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "濃い",
-        "hiragana": "こい",
-        "meaning": "짙다"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "辛い",
-        "hiragana": "からい",
-        "meaning": "맵다"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "⾃慢",
-        "hiragana": "じまん",
-        "meaning": "자랑"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "話題",
-        "hiragana": "わだい",
-        "meaning": "화제"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "縮小",
-        "hiragana": "しゅくしょう",
-        "meaning": "축소"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "すっかり",
-        "hiragana": "-",
-        "meaning": "죄다,  모두"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "硬い",
-        "hiragana": "かたい",
-        "meaning": "딱딱하다"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "回す",
-        "hiragana": "まわす",
-        "meaning": "돌리다"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "ストレス",
-        "hiragana": "-",
-        "meaning": "스트레스"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "判断",
-        "hiragana": "はんだん",
-        "meaning": "판단"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "倒れる",
-        "hiragana": "たおれる",
-        "meaning": "쓰러지다, 넘어지다"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "応募",
-        "hiragana": "おうぼ",
-        "meaning": "응모"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "區間",
-        "hiragana": "くかん",
-        "meaning": "구간"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "編む",
-        "hiragana": "あむ",
-        "meaning": "(스웨터를) 짜다"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "祕密",
-        "hiragana": "ひみつ",
-        "meaning": "비밀"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "欠点",
-        "hiragana": "けってん",
-        "meaning": "결점"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "記録",
-        "hiragana": "きろく",
-        "meaning": "기록"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "壽命",
-        "hiragana": "じゅみょう",
-        "meaning": "수명"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "動作",
-        "hiragana": "どうさ",
-        "meaning": "동작"
-    },
-    {
-        "week": "2026년 9월 22일(화)",
-        "kanji": "莫⼤",
-        "hiragana": "ばくだい",
-        "meaning": "막대(함)"
+        "week": "2026년 10월 2일(금)",
+        "kanji": "親しい",
+        "hiragana": "したしい",
+        "meaning": "친하다"
     }
 ]
